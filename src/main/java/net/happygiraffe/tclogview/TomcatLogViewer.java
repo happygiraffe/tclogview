@@ -84,7 +84,11 @@ public class TomcatLogViewer extends HttpServlet {
             HttpServletRequest req, HttpServletResponse resp) throws IOException {
         resp.setContentType("text/plain");
         resp.setCharacterEncoding("UTF-8");
+        // XXX What if it's more than 2Gb?
+        resp.setContentLength((int) file.length());
+
         PrintWriter w = resp.getWriter();
+        // XXX If it's not valid UTF-8, we may emit fewer bytes than we said.
         InputStreamReader isr = new InputStreamReader(new BufferedInputStream(
                 new FileInputStream(file)), "UTF-8");
         int c;
