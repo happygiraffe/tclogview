@@ -68,7 +68,8 @@ public class TomcatLogViewer extends HttpServlet {
 
     private void serveLogFile(File file,
             HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        resp.setContentType("text/plain; charset=UTF-8");
+        resp.setContentType("text/plain");
+        resp.setCharacterEncoding("UTF-8");
         PrintWriter w = resp.getWriter();
         InputStreamReader isr = new InputStreamReader(new BufferedInputStream(
                 new FileInputStream(file)), "UTF-8");
