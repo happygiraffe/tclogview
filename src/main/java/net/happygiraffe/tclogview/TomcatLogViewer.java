@@ -29,12 +29,19 @@ public class TomcatLogViewer extends HttpServlet {
         FileBean logDir = getLogDir();
         req.setAttribute("logDir", logDir);
 
-        String servletPath = req.getServletPath();
-        if ("/".equals(servletPath)) {
+        if (isIndex(req)) {
             serveIndexPage(logDir, req, resp);
         } else {
-            final File logFile = getLogFile(logDir, servletPath.substring(1));
-            serveLogFile(logFile, req, resp);
+            serveLogFile(getLogFile(req), req, resp);
+        }
+    }
+
+    @Override
+    protected long getLastModified(HttpServletRequest req) {
+        if (isIndex(req)) {
+            return getLogDir().getFile().lastModified();
+        } else {
+            return getLogFile(req).lastModified();
         }
     }
 
@@ -42,9 +49,8 @@ public class TomcatLogViewer extends HttpServlet {
         return new FileBean(System.getProperty("catalina.base"), "logs");
     }
 
-    private File getLogFile(FileBean logDir, String fileName) {
-        File file = new File(logDir.getFile(), fileName);
-        return file;
+    private File getLogFile(HttpServletRequest req) {
+        return new File(getLogDir().getFile(), getRequestedLogFile(req));
     }
 
     private List<FileBean> getLogFiles(FileBean logDir) {
@@ -57,6 +63,14 @@ public class TomcatLogViewer extends HttpServlet {
             }
         });
         return logFiles;
+    }
+
+    private String getRequestedLogFile(HttpServletRequest req) {
+        return req.getServletPath().substring(1);
+    }
+
+    private boolean isIndex(HttpServletRequest req) {
+        return "/".equals(req.getServletPath());
     }
 
     private void serveIndexPage(FileBean logDir, HttpServletRequest req,
@@ -75,7 +89,7 @@ public class TomcatLogViewer extends HttpServlet {
                 new FileInputStream(file)), "UTF-8");
         int c;
         while ((c = isr.read()) != -1) {
-            w.print((char)c);
+            w.print((char) c);
         }
     }
 }
