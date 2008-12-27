@@ -20,7 +20,7 @@
             <c:forEach items="${logFiles}" var="logFile">
                 <tr>
                     <td class="name">
-                        <a href="${contextPath}/${logFile.name}">
+                        <a href="${contextPath}/log/${logFile.name}">
                             <code>${logFile.name}</code>
                         </a>
                     </td>
