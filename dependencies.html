@@ -1,0 +1,438 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Tomcat Log Viewer - Project Dependencies</title>
+    <style type="text/css" media="all">
+      @import url("./css/maven-base.css");
+      @import url("./css/maven-theme.css");
+      @import url("./css/site.css");
+    </style>
+    <link rel="stylesheet" href="./css/print.css" type="text/css" media="print" />
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+      </head>
+  <body class="composite">
+    <div id="banner">
+                    <span id="bannerLeft">
+    
+            Tomcat Log Viewer
+    
+            </span>
+                    <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="breadcrumbs">
+          
+  
+
+  
+    
+  
+  
+    
+            <div class="xleft">
+        Last Published: 2009-01-06
+                      </div>
+            <div class="xright">            <a href="">Tomcat Log Viewer</a>
+            
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="leftColumn">
+      <div id="navcolumn">
+           
+  
+
+  
+    
+  
+  
+    
+                             <h5>Project Documentation</h5>
+            <ul>
+              
+                
+              
+      
+            
+      
+            
+            
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+            <li class="expanded">
+                    <a href="project-info.html">Project Information</a>
+                  <ul>
+                  
+    <li class="none">
+                    <a href="index.html">About</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="integration.html">Continuous Integration</a>
+          </li>
+                  
+    <li class="none">
+              <strong>Dependencies</strong>
+        </li>
+                  
+    <li class="none">
+                    <a href="issue-tracking.html">Issue Tracking</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="mail-lists.html">Mailing Lists</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="plugin-management.html">Plugin Management</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="license.html">Project License</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="plugins.html">Project Plugins</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="project-summary.html">Project Summary</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="team-list.html">Project Team</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="source-repository.html">Source Repository</a>
+          </li>
+              </ul>
+        </li>
+          </ul>
+                                           <a href="http://maven.apache.org/" title="Built by Maven" class="poweredBy">
+            <img alt="Built by Maven" src="./images/logos/maven-feather.png"></img>
+          </a>
+                       
+  
+
+  
+    
+  
+  
+    
+        </div>
+    </div>
+    <div id="bodyColumn">
+      <div id="contentBox">
+        <div class="section"><h2>Project Dependencies</h2>
+<div class="section"><h3>runtime</h3>
+<p>The following is a list of runtime dependencies for this project. These dependencies are required to run the application:</p>
+<table class="bodyTable"><tr class="a"><th>GroupId</th>
+<th>ArtifactId</th>
+<th>Version</th>
+<th>Type</th>
+</tr>
+<tr class="b"><td>javax.servlet</td>
+<td>jstl</td>
+<td>1.2</td>
+<td>jar</td>
+</tr>
+</table>
+</div>
+<div class="section"><h3>provided</h3>
+<p>The following is a list of provided dependencies for this project. These dependencies are required to compile the application, but should be provided by default when using the library:</p>
+<table class="bodyTable"><tr class="a"><th>GroupId</th>
+<th>ArtifactId</th>
+<th>Version</th>
+<th>Type</th>
+</tr>
+<tr class="b"><td>javax.servlet</td>
+<td>servlet-api</td>
+<td>2.5</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>javax.servlet.jsp</td>
+<td>jsp-api</td>
+<td>2.1</td>
+<td>jar</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="section"><h2>Project Transitive Dependencies</h2>
+<p>No transitive dependencies are required for this project.</p>
+</div>
+<div class="section"><h2>Project Dependency Graph</h2>
+<script language="javascript" type="text/javascript">
+      function toggleDependencyDetail( divId, imgId )
+      {
+        var div = document.getElementById( divId );
+        var img = document.getElementById( imgId );
+        if( div.style.display == '' )
+        {
+          div.style.display = 'none';
+          img.src='./images/icon_info_sml.gif';
+        }
+        else
+        {
+          div.style.display = '';
+          img.src='./images/close.gif';
+        }
+      }
+</script>
+<div class="section"><h3>Dependency Tree</h3>
+<ul><li>net.happygiraffe:tclogview:war:1.0-SNAPSHOT <img id="_1266179390" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1300955144', '_1266179390' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1300955144" style="display:none"><table class="bodyTable"><tr class="b"><th>Tomcat Log Viewer</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>
+A simple webapp for viewing tomcat's log files through the web.</p>
+<p><b>URL: </b>
+<a class="externalLink" href="http://github.com/happygiraffe/tclogview">http://github.com/happygiraffe/tclogview</a>
+</p>
+<p><b>Project License: </b>
+No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div><ul><li>javax.servlet:servlet-api:jar:2.5 (provided) <img id="_1969086549" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1883364758', '_1969086549' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1883364758" style="display:none"><table class="bodyTable"><tr class="b"><th>Unnamed - javax.servlet:servlet-api:jar:2.5</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>
+There is currently no description associated with this project.</p>
+<p><b>Project License: </b>
+No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>javax.servlet.jsp:jsp-api:jar:2.1 (provided) <img id="_1433991538" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_674485448', '_1433991538' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_674485448" style="display:none"><table class="bodyTable"><tr class="b"><th>Unnamed - javax.servlet.jsp:jsp-api:jar:2.1</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>
+There is currently no description associated with this project.</p>
+<p><b>Project License: </b>
+No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>javax.servlet:jstl:jar:1.2 (runtime) <img id="_514072533" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1900960821', '_514072533' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1900960821" style="display:none"><table class="bodyTable"><tr class="b"><th>Unnamed - javax.servlet:jstl:jar:1.2</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>
+There is currently no description associated with this project.</p>
+<p><b>Project License: </b>
+No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section"><h2>Licenses</h2>
+<p><b>Unknown: </b>
+Tomcat Log Viewer, Unnamed - javax.servlet.jsp:jsp-api:jar:2.1, Unnamed - javax.servlet:jstl:jar:1.2, Unnamed - javax.servlet:servlet-api:jar:2.5</p>
+</div>
+<div class="section"><h2>Dependency File Details</h2>
+<table class="bodyTable"><tbody><tr class="b"><th align="left">Filename</th>
+<th align="right">Size</th>
+<th align="right">Entries</th>
+<th align="right">Classes</th>
+<th align="right">Packages</th>
+<th align="center">JDK Rev</th>
+<th align="center">Debug</th>
+</tr>
+<tr class="a"><td align="left">jstl-1.2.jar</td>
+<td align="right">404.53 kB</td>
+<td align="right">341</td>
+<td align="right">279</td>
+<td align="right">27</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">servlet-api-2.5.jar</td>
+<td align="right">102.65 kB</td>
+<td align="right">68</td>
+<td align="right">42</td>
+<td align="right">2</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">jsp-api-2.1.jar</td>
+<td align="right">98.28 kB</td>
+<td align="right">101</td>
+<td align="right">84</td>
+<td align="right">4</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><th align="left">Total</th>
+<th align="right">Size</th>
+<th align="right">Entries</th>
+<th align="right">Classes</th>
+<th align="right">Packages</th>
+<th align="center">JDK Rev</th>
+<th align="center">Debug</th>
+</tr>
+<tr class="a"><td align="right">3</td>
+<td align="right">605.46 kB</td>
+<td align="right">510</td>
+<td align="right">405</td>
+<td align="right">33</td>
+<td align="center">1.5</td>
+<td align="right">3</td>
+</tr>
+<tr class="b"><td align="right">runtime: 1</td>
+<td align="right">runtime: 404.53 kB</td>
+<td align="right">runtime: 341</td>
+<td align="right">runtime: 279</td>
+<td align="right">runtime: 27</td>
+<td align="center">-</td>
+<td align="right">runtime: 1</td>
+</tr>
+<tr class="a"><td align="right">provided: 2</td>
+<td align="right">provided: 200.93 kB</td>
+<td align="right">provided: 169</td>
+<td align="right">provided: 126</td>
+<td align="right">provided: 6</td>
+<td align="center">-</td>
+<td align="right">provided: 2</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section"><h2>Dependency Repository Locations</h2>
+<table class="bodyTable"><tbody><tr class="b"><th align="left">Repo ID</th>
+<th align="left">URL</th>
+<th align="center">Release</th>
+<th align="center">Snapshot</th>
+</tr>
+<tr class="a"><td align="left">semantico-snapshots</td>
+<td align="left"><a class="externalLink" href="http://nexus.semantico.net/content/repositories/libs-snapshots">http://nexus.semantico.net/content/repositories/libs-snapshots</a>
+</td>
+<td align="center">-</td>
+<td align="center">Yes</td>
+</tr>
+<tr class="b"><td align="left">central</td>
+<td align="left"><a class="externalLink" href="http://repo1.maven.org/maven2">http://repo1.maven.org/maven2</a>
+</td>
+<td align="center">Yes</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">third-party-snapshots</td>
+<td align="left"><a class="externalLink" href="http://nexus.semantico.net/content/repositories/third-party-snapshots">http://nexus.semantico.net/content/repositories/third-party-snapshots</a>
+</td>
+<td align="center">-</td>
+<td align="center">Yes</td>
+</tr>
+<tr class="b"><td align="left">semantico-releases</td>
+<td align="left"><a class="externalLink" href="http://nexus.semantico.net/content/repositories/libs-releases">http://nexus.semantico.net/content/repositories/libs-releases</a>
+</td>
+<td align="center">Yes</td>
+<td align="center">-</td>
+</tr>
+</tbody>
+</table>
+<p>Repository locations for each of the Dependencies.</p>
+<table class="bodyTable"><tbody><tr class="a"><th align="left">Artifact</th>
+<th align="center">semantico-snapshots</th>
+<th align="center">central</th>
+<th align="center">third-party-snapshots</th>
+<th align="center">semantico-releases</th>
+</tr>
+<tr class="b"><td align="left">javax.servlet:jstl:jar:1.2</td>
+<td align="center">-</td>
+<td align="center"><a class="externalLink" href="http://repo1.maven.org/maven2/javax/servlet/jstl/1.2/jstl-1.2.jar"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a>
+</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">javax.servlet:servlet-api:jar:2.5</td>
+<td align="center">-</td>
+<td align="center"><a class="externalLink" href="http://repo1.maven.org/maven2/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a>
+</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">javax.servlet.jsp:jsp-api:jar:2.1</td>
+<td align="center">-</td>
+<td align="center"><a class="externalLink" href="http://repo1.maven.org/maven2/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1.jar"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a>
+</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><th align="left">Total</th>
+<th align="center">semantico-snapshots</th>
+<th align="center">central</th>
+<th align="center">third-party-snapshots</th>
+<th align="center">semantico-releases</th>
+</tr>
+<tr class="b"><td align="left">3 (runtime: 1, provided: 2)</td>
+<td align="center">0</td>
+<td align="center">3</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+      </div>
+    </div>
+    <div class="clear">
+      <hr/>
+    </div>
+    <div id="footer">
+      <div class="xright">&#169;  
+          2009
+    
+          
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+  </body>
+</html>
