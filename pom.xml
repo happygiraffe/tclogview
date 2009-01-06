@@ -10,6 +10,26 @@
     <description>
         A simple webapp for viewing tomcat's log files through the web.
     </description>
+    <inceptionYear>2008</inceptionYear>
+    <scm>
+        <connection>scm:git:git://github.com/happygiraffe/tclogview.git</connection>
+        <developerConnection>scm:git:ssh://github.com/happygiraffe/tclogview.git</developerConnection>
+        <url>http://github.com/happygiraffe/tclogview/</url>
+    </scm>
+    <developers>
+        <developer>
+            <id>dom</id>
+            <name>Dominic Mitchell</name>
+            <email>dom@happygiraffe.net</email>
+            <url>http://happygiraffe.net/blog/</url>
+        </developer>
+    </developers>
+    <licenses>
+        <license>
+            <name>New BSD</name>
+            <url>file://${project.basedir}/LICENCE.txt</url>
+        </license>
+    </licenses>
     <dependencies>
         <dependency>
             <groupId>javax.servlet</groupId>
