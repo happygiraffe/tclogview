@@ -75,7 +75,7 @@
         <site>
             <id>gh-pages</id>
             <!-- This gets automatically pushed to the gh-pages branch. -->
-            <url>file:${project.basedir}/site</url>
+            <url>file:${project.basedir}/../${project.artifactId}-site</url>
         </site>
     </distributionManagement>
     <properties>
