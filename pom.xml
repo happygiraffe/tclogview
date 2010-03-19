@@ -12,8 +12,8 @@
     </description>
     <inceptionYear>2008</inceptionYear>
     <scm>
-        <connection>scm:git:git://github.com/happygiraffe/tclogview.git</connection>
-        <developerConnection>scm:git:ssh://github.com/happygiraffe/tclogview.git</developerConnection>
+        <connection>scm:git:git@github.com:happygiraffe/tclogview.git</connection>
+        <developerConnection>scm:git:ssh@github.com:happygiraffe/tclogview.git</developerConnection>
         <url>http://github.com/happygiraffe/tclogview/</url>
     </scm>
     <developers>
